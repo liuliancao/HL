@@ -1,0 +1,25 @@
+.noline {
+    text-decoration: none;
+}
+.hl-body-img {
+    height: 300px;
+    width: 480px;
+    opacity: 0.5;
+}
+.1hl-body-search {
+    width: 480px;
+}
+/* for img black-w */
+img.desaturate {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+}
+/* self hr */
+.hl-hr {
+    border: none;
+    background-color: black;
+    height: 1px;
+}
