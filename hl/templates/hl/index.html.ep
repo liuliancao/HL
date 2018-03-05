@@ -1,0 +1,17 @@
+% layout 'hl';
+% title 'Demo test ~~';
+<div class="row">
+  <div class="col-5">
+    <img  src="./img/index.jpg" class="hl-body-img">
+  </div>
+  <div class="col-7">
+    <ul>
+      <h5>Features: </h5>
+      <li>Add, change, delete, search purchase model<li>
+      <li>Add, change, delete, search purchase model<li>
+      <li>Add, change, delete, search purchase model<li>
+    </ul>
+  </div>
+</div>
+
+

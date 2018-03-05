@@ -1,0 +1,17 @@
+% layout 'hl', title => $pur->{title};
+<p>id: <%= $pur->{id} %></p>
+<p>成本中心: <%= $pur->{cost_center} %></p>
+<p>部门: <%= $pur->{department} %></p>
+<p>资产号: <%= $pur->{assets} %></p>
+<p>季度批次: <%= $pur->{q_version} %></p>
+<p>申请人: <%= $pur->{applicant} %></p>
+<p>采购类型: <%= $pur->{pur_type} %></p>
+<p>配置: <%= $pur->{allocation} %></p>
+<p>厂商: <%= $pur->{brand} %></p>
+<p>数量: <%= $pur->{pur_number} %></p>
+<p>机房: <%= $pur->{idc_room} %></p>
+<p>采购原因: <%= $pur->{pur_reason} %></p>
+<p>采购状态: <%= $pur->{state} %></p>
+<p>评论或者备注: <%= $pur->{remarks} %></p>
+
+%= link_to 'Edit' => edit_pur => {id => $pur->{id}}
