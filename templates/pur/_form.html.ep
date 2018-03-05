@@ -1,0 +1,55 @@
+%= form_for $target => begin
+  %= label_for cost_center => '成本中心: '
+  <br>
+  %= text_field cost_center => $pur->{cost_center}
+  <br>
+  %= label_for department => '部门'
+  <br>
+  %= text_field department => ${pur}->{department}
+  <br>
+  %= label_for assets => '资产号'
+  <br>
+  %= text_field assets => ${pur}->{assets}
+  <br>
+  %= label_for q_version => '季度批次'
+  <br>
+  %= text_field  q_version => ${pur}->{q_version}
+  <br>
+  %= label_for applicant => '申请人'
+  <br>
+  %= text_field  applicant => ${pur}->{applicant}
+  <br>
+  %= label_for pur_type => '采购类型'
+  <br>
+  %= text_field  pur_type => ${pur}->{pur_type}
+  <br>
+  %= label_for allocation => '配置'
+  <br>
+  %= text_field allocation => ${pur}->{allocation}
+  <br>
+  %= label_for brand => '厂商'
+  <br>
+  %= text_field brand => ${pur}->{brand}
+  <br>
+  %= label_for pur_number => '数量'
+  <br>
+  %= text_field pur_number => ${pur}->{pur_number}
+  <br>
+  %= label_for idc_room => '机房'
+  <br>
+  %= text_field idc_room  => ${pur}->{idc_room}
+  <br>
+  %= label_for pur_reason => '采购原因'
+  <br>
+  %= text_field pur_reason  => ${pur}->{pur_reason}
+  <br>
+    <br>
+  %= label_for state => '采购状态'
+  <br>
+  %= text_field state  => ${pur}->{state}
+  <br>
+  %= label_for remarks => '评论或者备注'
+  <br>
+  %= text_field remarks  => ${pur}->{remarks}
+  %= submit_button $caption
+% end

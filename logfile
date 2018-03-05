@@ -1,0 +1,98 @@
+2018-03-01 21:33:45.148 CST [4258] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-03-01 21:33:45.148 CST [4258] LOG:  listening on IPv6 address "::1", port 5432
+2018-03-01 21:33:45.149 CST [4258] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2018-03-01 21:33:45.178 CST [4259] LOG:  database system was shut down at 2018-02-25 01:19:28 CST
+2018-03-01 21:33:45.188 CST [4258] LOG:  database system is ready to accept connections
+2018-03-01 21:33:48.517 CST [4274] FATAL:  database "liuliancao" does not exist
+2018-03-01 21:34:39.359 CST [4284] FATAL:  database "liuliancao" does not exist
+2018-03-01 21:35:09.249 CST [4297] ERROR:  relation "purs" does not exist at character 15
+2018-03-01 21:35:09.249 CST [4297] STATEMENT:  SELECT * FROM "purs" WHERE ( "id" = $1 )
+2018-03-01 21:35:26.515 CST [4297] ERROR:  relation "purs" does not exist at character 15
+2018-03-01 21:35:26.515 CST [4297] STATEMENT:  SELECT * FROM "purs" WHERE ( "id" = $1 )
+2018-03-01 21:38:30.610 CST [4505] FATAL:  database "liuliancao" does not exist
+2018-03-01 21:38:44.817 CST [4535] ERROR:  unrecognized configuration parameter "tables"
+2018-03-01 21:38:44.817 CST [4535] STATEMENT:  show tables;
+2018-03-01 21:38:51.981 CST [4537] ERROR:  relation "purs" does not exist at character 15
+2018-03-01 21:38:51.981 CST [4537] STATEMENT:  SELECT * FROM "purs" WHERE ( "id" = $1 )
+2018-03-01 21:39:49.954 CST [4537] ERROR:  relation "purs" does not exist at character 15
+2018-03-01 21:39:49.954 CST [4537] STATEMENT:  SELECT * FROM "purs" WHERE ( "id" = $1 )
+2018-03-01 22:02:28.009 CST [4718] ERROR:  syntax error at or near ")" at character 21
+2018-03-01 22:02:28.009 CST [4718] STATEMENT:  INSERT INTO "pur" ( ) VALUES (  ) RETURNING "id"
+2018-03-01 22:02:46.780 CST [4718] ERROR:  syntax error at or near ")" at character 21
+2018-03-01 22:02:46.780 CST [4718] STATEMENT:  INSERT INTO "pur" ( ) VALUES (  ) RETURNING "id"
+2018-03-01 22:04:59.757 CST [4718] ERROR:  syntax error at or near ")" at character 21
+2018-03-01 22:04:59.757 CST [4718] STATEMENT:  INSERT INTO "pur" ( ) VALUES (  ) RETURNING "id"
+2018-03-01 22:06:36.357 CST [4718] ERROR:  syntax error at or near ")" at character 21
+2018-03-01 22:06:36.357 CST [4718] STATEMENT:  INSERT INTO "pur" ( ) VALUES (  ) RETURNING "id"
+2018-03-01 22:08:39.160 CST [4718] ERROR:  syntax error at or near ")" at character 21
+2018-03-01 22:08:39.160 CST [4718] STATEMENT:  INSERT INTO "pur" ( ) VALUES (  ) RETURNING "id"
+2018-03-01 22:11:48.120 CST [4718] ERROR:  syntax error at or near ")" at character 21
+2018-03-01 22:11:48.120 CST [4718] STATEMENT:  INSERT INTO "pur" ( ) VALUES (  ) RETURNING "id"
+2018-03-01 22:17:57.589 CST [4892] ERROR:  syntax error at or near ")" at character 21
+2018-03-01 22:17:57.589 CST [4892] STATEMENT:  INSERT INTO "pur" ( ) VALUES (  ) RETURNING "id"
+2018-03-01 22:21:56.523 CST [4535] ERROR:  syntax error at or near "pur" at character 6
+2018-03-01 22:21:56.523 CST [4535] STATEMENT:  drop pur
+	;
+2018-03-01 22:21:59.603 CST [4535] ERROR:  syntax error at or near "pur" at character 6
+2018-03-01 22:21:59.603 CST [4535] STATEMENT:  drop pur;
+2018-03-01 22:22:40.521 CST [4921] ERROR:  relation "pur" does not exist at character 15
+2018-03-01 22:22:40.521 CST [4921] STATEMENT:  SELECT * FROM "pur"
+2018-03-01 22:24:12.164 CST [4535] ERROR:  syntax error at or near "quit" at character 1
+2018-03-01 22:24:12.164 CST [4535] STATEMENT:  quit
+	q
+	;
+2018-03-01 22:24:13.803 CST [4535] ERROR:  syntax error at or near "q" at character 1
+2018-03-01 22:24:13.803 CST [4535] STATEMENT:  q;
+2018-03-01 22:27:40.399 CST [5075] ERROR:  date/time field value out of range: "00-00-00 00:00:00"
+2018-03-01 22:27:40.399 CST [5075] HINT:  Perhaps you need a different "datestyle" setting.
+2018-03-01 22:27:40.399 CST [5075] STATEMENT:  create table if not exists pur (
+	  id    serial primary key,
+	  
+	  cost_center text default null,
+	  
+	  department  text default null,
+	  
+	  assets text,
+	  
+	  q_version text,
+	  
+	  applicant text,
+	  
+	  pur_type text,
+	  
+	  allocation text,
+	  
+	  brand text,
+	  
+	  pur_number integer,
+	  
+	  idc_room text,
+	  
+	  pur_reason text,
+	  
+	  state integer default 0,
+	  
+	  state_cn text default null,
+	  
+	  create_time  timestamp default '00-00-00 00:00:00',
+	  
+	  update_time  timestamp default '00-00-00 00:00:00',
+	  
+	  remarks text default null
+	);
+2018-03-01 22:32:10.465 CST [5201] ERROR:  syntax error at or near ")" at character 21
+2018-03-01 22:32:10.465 CST [5201] STATEMENT:  INSERT INTO "pur" ( ) VALUES (  ) RETURNING "id"
+2018-03-01 22:33:35.738 CST [5215] ERROR:  syntax error at or near ")" at character 21
+2018-03-01 22:33:35.738 CST [5215] STATEMENT:  INSERT INTO "pur" ( ) VALUES (  ) RETURNING "id"
+2018-03-01 22:35:22.064 CST [5215] ERROR:  syntax error at or near ")" at character 21
+2018-03-01 22:35:22.064 CST [5215] STATEMENT:  INSERT INTO "pur" ( ) VALUES (  ) RETURNING "id"
+2018-03-01 22:37:01.969 CST [5215] ERROR:  syntax error at or near ")" at character 21
+2018-03-01 22:37:01.969 CST [5215] STATEMENT:  INSERT INTO "pur" ( ) VALUES (  ) RETURNING "id"
+2018-03-01 22:37:16.613 CST [5271] ERROR:  syntax error at or near ")" at character 21
+2018-03-01 22:37:16.613 CST [5271] STATEMENT:  INSERT INTO "pur" ( ) VALUES (  ) RETURNING "id"
+2018-03-01 22:37:37.547 CST [5271] ERROR:  syntax error at or near ")" at character 21
+2018-03-01 22:37:37.547 CST [5271] STATEMENT:  INSERT INTO "pur" ( ) VALUES (  ) RETURNING "id"
+2018-03-01 22:39:10.245 CST [5290] ERROR:  syntax error at or near ")" at character 21
+2018-03-01 22:39:10.245 CST [5290] STATEMENT:  INSERT INTO "pur" ( ) VALUES (  ) RETURNING "id"
+2018-03-01 22:39:22.090 CST [5290] ERROR:  syntax error at or near ")" at character 21
+2018-03-01 22:39:22.090 CST [5290] STATEMENT:  INSERT INTO "pur" ( ) VALUES (  ) RETURNING "id"

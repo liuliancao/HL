@@ -1,0 +1,4 @@
+% layout 'hl', title => 'Edit pur';
+<h2>Edit pur</h2>
+%= include 'pur/_form', caption => 'Update', target => 'update_pur'
+%= button_to Remove => remove_pur => {id => $pur->{id}}

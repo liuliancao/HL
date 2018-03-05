@@ -1,0 +1,10 @@
+% layout 'hl', title => 'Pur list';
+% for my $pur (@$purs) {
+  <h2><%= link_to $pur->{pur_reason} => show_pur => {id => $pur->{id}} %></h2>
+  <p>
+    %= $pur->{assets}
+    %= $pur->{idc_room}
+    %= $pur->{pur_number}
+  </p>
+% }
+%= link_to 'New pur' => 'create_pur'

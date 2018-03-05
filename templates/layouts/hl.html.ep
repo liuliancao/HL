@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <!--meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"-->
+    <!--link rel="stylesheet" href="./node_modules/bootstrap3/dist/css/bootstrap.min.css"-->
+    <link rel="stylesheet" href="../node_modules/wingcss/dist/wing.min.css">
+    <link rel="stylesheet" href="../css/hl.css">
+
+  </head>
+  <body>
+    <div class="hl-head">
+      <div class="nav">
+	<h5 class="nav-logo"><a href='/''>HL</a></h5>
+	<a class="nav-item" href="#">Export</a>
+	<a class="nav-item" href="#">Search</a>
+	<a class="nav-item" href="#">Compare</a>
+      </div>
+    </div>
+    <hr class="hl-hr">
+    <div class="hl-body">
+      <%= content %>
+    </div>
+  </body>
+</html>

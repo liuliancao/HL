@@ -1,0 +1,6 @@
+% layout 'hl';
+% title 'Create Pur';
+  <h3>创建一个采购</h3>
+  <div>
+    <%= include 'pur/_form', caption => 'Create', target => 'store_pur' %>
+  </div>
